@@ -518,7 +518,7 @@ void MainWindow::setupKeyboardShortcuts()
 #if defined(Q_OS_MACOS)
     shortcut->setShortcut(QKeySequence(Qt::META | Qt::Key_N));
 #else
-    shortcut->setShortcut(QKeySequence(Qt::META | Qt::SHIFT | Qt::Key_N));
+    shortcut->setShortcut(QKeySequence(Qt::META | Qt::Key_X));
 #endif
     connect(shortcut, &QxtGlobalShortcut::activated, this, [=]() {
         // workaround prevent textEdit and searchEdit
